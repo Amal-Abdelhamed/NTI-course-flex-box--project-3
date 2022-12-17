@@ -55,11 +55,17 @@ margin-right: 10px;
         list-style: none;
         text-align: center;
     }
-    .nav-links ul li{
+    .nav-links ul li,.nav-links ul .tap{
         width: 20%;
         line-height: 120px;
         font-size: 20px;
         height: 120px;
+        text-decoration: none;
+    }
+    .nav-links ul a .link{
+        width: 100%;
+        text-align: center !important;
+        color: black;
     }
     .nav-links ul li:last-child{
         text-align: right;
@@ -148,6 +154,11 @@ margin-right: 10px;
             border-radius: 3px;
 
         }
+        .cover button:hover{
+            background-color: #d17f68;
+            box-shadow: inset 0px 0px 9px 2px #cfcfcf8c;
+
+        }
         .cover .container{
             position: relative;
             height: 100%;
@@ -230,12 +241,17 @@ margin-right: 10px;
         } 
         .portfolio .head button{
             color: white;
-            background-color: #2790c0;
+            background-color: #256292;
             border: none;
             padding: 10px 20px;
             cursor: pointer;
             border-radius: 3px;
         }
+        .portfolio .head button:hover{
+
+            background-color: #447399;
+        }
+
         
         .portfolio .content{
             display: flex;
@@ -406,10 +422,14 @@ justify-content: space-around;
             border: none;
             padding: 7px;
             border-radius: 3px;
-            display: inline-block;
+            display: block;
             cursor: pointer;
             margin-left: auto;
             margin-top: 10px;
+        }
+        footer .project button:hover{
+            background-color: #447399;
+
         }
         .footer-card .project:last-child{
             border: none;
@@ -427,3 +447,153 @@ justify-content: space-around;
             color: #2790c0;
             text-align: center;
         }
+        footer .footer-card input{
+            display: block;
+            width: 100%;
+        }
+
+
+        .contact-page .content p{
+            font-size: 60px;
+            font-weight: 600;
+        }
+        .contact-us{
+            padding: 70px 0;
+        }
+        .contact-us .container .main-text{
+            text-align: center;
+            width: 80%;
+            margin: auto;
+        }
+        .contact-us .info{
+            display: flex;
+            margin-top: 50px;
+
+        }
+        .contact-us .info .form{
+            width: 50%;
+            border-right: 1px solid #888f96;
+            padding-right: 50px;
+        }
+        .contact-us .info .form p{
+            padding-top: 15px;
+            padding-bottom: 7px;
+            /* font-size: smaller; */
+        }
+        .contact-us .info .form .star{
+            color: red;
+        }
+        .contact-us input{
+            width: 100%;
+            line-height: 30px;
+            height: 30px;
+            padding: 5px;
+        }
+        .contact-us textarea{
+            resize: none;
+            width: 100%;
+            padding: 5px;
+        }
+        .contact-us textarea:focus-visible{
+            box-shadow: inset 0px 0px 2px 0.5px red;
+            border:none;
+            outline: none;
+            padding: 5px;
+        }
+        .contact-us input:focus-visible{
+            line-height: 20px;
+           box-shadow: inset 0px 0px 2px 0.5px red;
+           border:none;
+           outline: none;
+           line-height: 30px;
+           height: 30px;
+           padding: 5px;
+        }
+        .contact-us .code{
+            display:flex;
+            margin-top: 15PX;
+            height:55px;
+
+        }
+        .contact-us .code .code-text{
+            width: 80%;
+            height: 100%;
+            margin-right: 10px;
+            text-align: center;
+            font-size: larger;
+            font-weight: 700;
+            
+        }
+        .contact-us .code .code-label{
+            padding-bottom: 7px;
+            display: inline-block;
+            font-size: smaller;
+
+        }
+        .contact-us form button{
+            background-color: #256292;
+            color: white;
+            border: none;
+            padding: 7px 15px;
+            border-radius: 3px;
+            display: block;
+            cursor: pointer;
+            margin-left: auto;
+            margin-top: 10px;
+        }
+        .contact-us form button:hover{
+            background-color: #447399;
+        }
+        .contact-us .address{
+            padding-left:50px ;
+        }
+        .contact-us .address .contact-icons{
+            display: flex;
+        }
+        .contact-us .address .contact-icons i{
+            margin-right: 20px;
+            color: white;
+            background-color: #525b64;
+            width: 40px;
+            height: 50px;
+            line-height: 40px;
+            padding-left: 11px;
+        }
+        .contact-us .address a{
+            color: #2790c0;
+        }
+        .contact-us .address  .contact-icons span{
+            color: #2790c0;
+        }
+        .contact-us .map{
+            padding:50px 0;
+        }
+        .contact-us .social{
+            width: 93%;
+        }
+        .contact-us .social h1{
+            color: #525b64;
+            line-height: 40px;
+            padding-bottom: 20px;
+            /* text-align:justify; */
+            /* letter-spacing: 0.2rem; */
+        }
+        .contact-us .social  i{
+            font-size: 40px;
+        }
+        .contact-us .social  .icons{
+display: flex;
+justify-content: space-between;
+}
+.contact-us .social  .icons i:first-child{
+    color: #2790c0;
+}
+.contact-us .social  .icons i:nth-child(2){
+    color: #117516;
+}
+.contact-us .social  .icons i:nth-child(3){
+    color: #c121d6;
+}
+.contact-us .social  .icons i:nth-child(4){
+    color: #27bbc0;
+}
